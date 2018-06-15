@@ -15,5 +15,9 @@ Pod::Spec.new do |s|
 
   s.cocoapods_version = '>= 1.1.0'
 
-  s.source_files = 'Sources/SwiftProtobuf/**/*.swift'
+  s.prepare_command = <<-CMD
+    make
+  CMD
+
+  s.source_files = 'Sources/SwiftProtobuf/**/{*.swift}'
 end
