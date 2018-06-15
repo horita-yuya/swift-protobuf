@@ -19,5 +19,6 @@ Pod::Spec.new do |s|
     make
   CMD
 
-  s.source_files = 'Sources/SwiftProtobuf/**/{*.swift}'
+  # s.source_files = 'Sources/SwiftProtobuf/**/{*.swift}'
+  s.source_files = '.build/release/protoc-gen-swift'
 end
